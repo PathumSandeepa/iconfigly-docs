@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: #f8fafc;
+  --color-brand: #5b1ee6;
+  --color-brand-hover: #4c17c4;
+  --color-lime: #b8f400;
+  --color-lime-hover: #a6dc00;
+  --color-ink: #18181b;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+}
