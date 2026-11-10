@@ -85,9 +85,11 @@ docker exec iconfigly-docs npm run build
 
 ---
 
-## Environment Variables
+## Environment Variables 
 
 | Variable | Default | Description |
 | :--- | :--- | :--- |
 | `PORT` | `3001` | Listening port for the Next.js server |
 | `NEXT_PUBLIC_APP_URL` | `http://localhost:3000` | Target URL for the Launch Console button |
+
+
