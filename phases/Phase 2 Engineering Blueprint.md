@@ -10,7 +10,7 @@
 
 ---
 
-## Table of Contents
+## Table of Contents 
 
 1. [Phase 2 Executive Summary & Scope](#1-phase-2-executive-summary--scope)
 2. [Phase 2 Architectural Decisions & Rationale (ADRs)](#2-phase-2-architectural-decisions--rationale-adrs)
