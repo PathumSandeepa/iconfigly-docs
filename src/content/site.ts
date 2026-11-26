@@ -1,13 +1,18 @@
 import type { SiteProfile } from "@/domain/site";
 
 const consoleUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+const appVersion = (
+  process.env.NEXT_PUBLIC_APP_VERSION ||
+  process.env.ICONFIGLY_VERSION ||
+  "1.0.0"
+).replace(/^v/, "");
 
 export const site: SiteProfile = {
   name: "iconfigly",
   title: "iconfigly — Open-Source Developer Control Plane",
   description:
     "Self-hosted Internal Developer Platform built in Go and Next.js. Catalog microservices and shared infrastructure across environments, enforce scoped RBAC with ancestor inheritance, and verify changes with cryptographic audit chains.",
-  version: "1.0.0",
+  version: appVersion,
   author: {
     name: "Pathum Sandeepa",
     role: "Core Platform Architect",
