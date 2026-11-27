@@ -1,11 +1,8 @@
 import type { SiteProfile } from "@/domain/site";
 
-const consoleUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
-const appVersion = (
-  process.env.NEXT_PUBLIC_APP_VERSION ||
-  process.env.ICONFIGLY_VERSION ||
-  "1.0.0"
-).replace(/^v/, "");
+const env = typeof process !== "undefined" ? process.env : undefined;
+const consoleUrl = env?.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+const appVersion = (env?.NEXT_PUBLIC_APP_VERSION ?? "1.0.0").replace(/^v/, "");
 
 export const site: SiteProfile = {
   name: "iconfigly",
